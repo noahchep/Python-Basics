@@ -1,0 +1,8 @@
+.venv/
+.idea/
+
+#git init
+#git add
+#git commit -"Python basics"
+#git remote add origin https://github.com/noahchep/Python-Basics.git
+#git push -u origin master
