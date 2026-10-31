@@ -1,8 +1,11 @@
 .venv/
 .idea/
+*.mp3
+*.txt
 
 #git init
 #git add
 #git commit -"Python basics"
 #git remote add origin https://github.com/noahchep/Python-Basics.git
-#git push -u origin master
+#git push -u origin master*.m4a
+__pycache__/
