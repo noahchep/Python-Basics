@@ -18,6 +18,11 @@ class Employee:
         print(self.gender)
         print("------------------")
 
+    def print_name(self):
+        print(f"Name is {self.full_name}")
+
+#subclass ==child
+
 class SalariedEmployee(Employee):
     def __init__(self, name:str, id_no:str, department:str, gender:str, salary:int, tenure:int):
         super().__init__(name, id_no,department, gender)
@@ -36,7 +41,9 @@ c1 = CasualWorker("Jack Ma", "44444333", "Sales", "M", 356)
 
 s1.print_details()
 c1.print_details()
-print(c1.cal_wage(69))
+print(c1.cal_wage(19))
+
+c1.print_name()
 
 
 
