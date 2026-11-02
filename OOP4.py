@@ -11,6 +11,7 @@ class Employee:
         self.id_no = id_no
         self.department = department
         self.gender = gender
+
     def print_details(self):
         print(self.full_name)
         print(self.id_no)
@@ -36,8 +37,12 @@ class CasualWorker(Employee):
     def cal_wage(self,hours:float):
         return hours * self.rate
 
+    def print_details(self):
+        print(f"Rate is {self.rate} per hour")
+        super().print_details()
+
 s1 = SalariedEmployee("Sarah", "2222333", "HR", "F", 95_000, 365)
-c1 = CasualWorker("Jack Ma", "44444333", "Sales", "M", 356)
+c1 = CasualWorker("Jack Ma", "44444333", "Sales", "M", 10)
 
 s1.print_details()
 c1.print_details()
@@ -45,6 +50,9 @@ print(c1.cal_wage(19))
 
 c1.print_name()
 
+
+
+#module == file and package
 
 
 
